@@ -1,9 +1,12 @@
 import java.util.Iterator;
 import java.util.LinkedList;
+import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
+
+
 
         LinkedList linkedList  = new LinkedList();
 
@@ -13,6 +16,9 @@ public class Main {
         linkedList.add("Jack");
         linkedList.add("Pam");
         linkedList.add("Mary");
+
+
+
 
         System.out.println(linkedList);
 
@@ -27,8 +33,16 @@ public class Main {
             }
         }
 
+        Iterator iterator = linkedList.iterator();
+        while (iterator.hasNext()){
+            if (iterator.next() == "Bob"){
+                System.out.println("We found Bob");
+            }
+        }
 
     }
+
+
 
 
 }
